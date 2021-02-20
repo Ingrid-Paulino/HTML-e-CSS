@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito wm linguagem JavaScript</p>
+    <!--A tag code não indenta o código-->
+    <code> 
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+            print(f' Onúmero {num} é PAR')
+        else:
+            print(f'O número {num} é ÍMPAR')
+        print('Fim do programa') 
+    </code>
+
+    <!--Como a tag code nao indenta, podemos usar a tag pre-->
+    <pre> <!--Da todos os espaços e quebras de linha que cloco no codigo-->
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f' Onúmero {num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR')
+    print('Fim do programa')
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
+    <h2>Citações completas</h2>
+    <p>Segundo jeff Noble, no seu livro HTML para leigos:</p>
+     <blockquote> <!--bloco de citaçoes, ela da uma afastada do canto-->
+        Realmente, não creio na alma humana, nem nunca cri. Tenho a convicção de que as pessoas são como as malas: cheias de coisas diversas, são expedidas, atiradas, empurradas, lançadas ao chão, perdidas e reencontradas, até que, por fim um Último Transportador as atira para o Último Comboio
+    </blockquote>
+
+    <blockquote cite="https://books.google.com.br/books?id=E8ZtDwAAQBAJ&printsec=frontcover&dq=html&hl=pt-BR&sa=X&ved=2ahUKEwiIvIu4puzuAhVJErkGHahXDSQQ6AEwBXoECAgQAg#v=onepage&q&f=false"> <!--bloco de citaçoes, ela da uma afastada do canto, no cite podemos colocar o link do site da citaçao ou nome do autor etc.-->
+        Realmente, não creio na alma humana, nem nunca cri. Tenho a convicção de que as pessoas são como as malas: cheias de coisas diversas, são expedidas, atiradas, empurradas, lançadas ao chão, perdidas e reencontradas, até que, por fim um Último Transportador as atira para o Último Comboio
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Makup linguage">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p> 
+    <h2>Texto investido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p><!--Fica investido-->
+    <p><bdo dir="ltr">Estou aprendendo a criar coisas em HTML.</bdo></p><!--fica normal-->
+
+</body>
+</html>
