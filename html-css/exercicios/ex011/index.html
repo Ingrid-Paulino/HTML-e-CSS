@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <!--Para ver as mudanças diminua e abra o site puxando com o mause para ver as umagens mudando, simulando dispositivos grandes como o pc e tv, medio para tabletes e pequenos para celular--> <!--A ordem do source tem que ser respeitadas -->
+    <picture> 
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel"> 
+    </picture>
+
+
+
+    
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reprodozir áudios em HTML5.</p>
+    <H2>Maneira 1</H2>
+    <audio src="midia/(sertanejo) gino e geno - mentira dela.mp3" controls autoplay></audio>
+    <!--Compativel com MP3 WAV OGG -> essa maneira é limitada    -->
+    <H2>Maneira 2</H2>
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/(sertanejo) gino e geno - mentira dela.mp3" type="audio/mpeg"><!--Tem varios tipos de (type) de audio naquele site iana apresentado no capitulo 10 tem todos os tipos. o do mp3 é audio/mpeg-->
+        <source src="midia/(sertanejo) gino e geno - mentira dela.ogg" type="audio/ogg">
+        <source src="midia/(sertanejo) gino e geno - mentira dela.wav" type="audio/wav">  <!--WAV é muito grande nn coloqueb  arquivo grande assim-->  
+
+        <!--Se o navegador nao conseguir abrir com nenhum desses tipos o audio, voce pode colocar um recado-->
+    </audio>
+ <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/(sertanejo) gino e geno - mentira dela.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+
+
+
+
+
+
+
+
+</body>
+</html>

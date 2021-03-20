@@ -4,49 +4,165 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outras formatações</title>
+    <title>Listas</title>
 </head>
 <body>
-    <h1>Outras formatações</h1>
-    <h2>Código-fonte</h2>
-    <p>O comando <code>document.getElementById('teste')</code> é escrito wm linguagem JavaScript</p>
-    <!--A tag code não indenta o código-->
-    <code> 
-        num = int(input('Digite um número'))
-        if num % 2 == 0:
-            print(f' Onúmero {num} é PAR')
-        else:
-            print(f'O número {num} é ÍMPAR')
-        print('Fim do programa') 
-    </code>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol>
+        <li>Acordar</li>
+        <li>Ligar pro João</li>
+        <li>Tomar café</li>
+        <!--Não é obrigatorio voce ter que fechar a tag li-->
+        <li>Escovar os dentes
+        <li>Ir para facudade
+        <li>Almoçar 
+        <li> Ir para o Trabalhando
+    </ol>
 
-    <!--Como a tag code nao indenta, podemos usar a tag pre-->
-    <pre> <!--Da todos os espaços e quebras de linha que cloco no codigo-->
-        <code>
-    num = int(input('Digite um número'))
-    if num % 2 == 0:
-        print(f' Onúmero {num} é PAR')
-    else:
-        print(f'O número {num} é ÍMPAR')
-    print('Fim do programa')
-        </code>
-    </pre>
-    <h2>Citações simples</h2>
-    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
-    <h2>Citações completas</h2>
-    <p>Segundo jeff Noble, no seu livro HTML para leigos:</p>
-     <blockquote> <!--bloco de citaçoes, ela da uma afastada do canto-->
-        Realmente, não creio na alma humana, nem nunca cri. Tenho a convicção de que as pessoas são como as malas: cheias de coisas diversas, são expedidas, atiradas, empurradas, lançadas ao chão, perdidas e reencontradas, até que, por fim um Último Transportador as atira para o Último Comboio
-    </blockquote>
+    <ol type="1" start="4">   <!--O start vai sinalizar de qual numero eu quero que começa a minha lista-->
+        <li>Acordar
+        <li>Ligar pro João
+        <li>Tomar café
+        <li>Escovar os dentes
+    </ol>
 
-    <blockquote cite="https://books.google.com.br/books?id=E8ZtDwAAQBAJ&printsec=frontcover&dq=html&hl=pt-BR&sa=X&ved=2ahUKEwiIvIu4puzuAhVJErkGHahXDSQQ6AEwBXoECAgQAg#v=onepage&q&f=false"> <!--bloco de citaçoes, ela da uma afastada do canto, no cite podemos colocar o link do site da citaçao ou nome do autor etc.-->
-        Realmente, não creio na alma humana, nem nunca cri. Tenho a convicção de que as pessoas são como as malas: cheias de coisas diversas, são expedidas, atiradas, empurradas, lançadas ao chão, perdidas e reencontradas, até que, por fim um Último Transportador as atira para o Último Comboio
-    </blockquote>
-    <h2>Abreviações</h2>
-    <p>Estou estudando <abbr title="HyperText Makup linguage">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p> 
-    <h2>Texto investido</h2>
-    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p><!--Fica investido-->
-    <p><bdo dir="ltr">Estou aprendendo a criar coisas em HTML.</bdo></p><!--fica normal-->
+    <ol type="A">
+        <li>Acordar</li>
+        <li>Ligar pro João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes
+        <li>Ir para facudade
+        <li>Almoçar 
+        <li> Ir para o Trabalhando
+    </ol>
 
+    <ol type="a">
+        <li>Acordar</li>
+        <li>Ligar pro João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes
+        <li>Ir para facudade
+        <li>Almoçar 
+        <li> Ir para o Trabalhando
+    </ol>
+
+    <ol type="I">
+        <li>Acordar</li>
+        <li>Ligar pro João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes
+        <li>Ir para facudade
+        <li>Almoçar 
+        <li> Ir para o Trabalhando
+    </ol>
+    <ol type="i">
+        <li>Acordar</li>
+        <li>Ligar pro João</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes
+        <li>Ir para facudade
+        <li>Almoçar 
+        <li> Ir para o Trabalhando
+    </ol>
+
+    <h2>Listas não Ordenadas</h2>
+    <ul>
+        <li>Pão</li>
+        <li>Tomate</li>
+        <li>Leite</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+    </ul>
+
+    <ul type="disc">
+        <li>Pão
+        <li>Tomate
+        <li>Leite
+        <li>Manteiga
+        <li>Arroz
+    </ul>
+
+    <ul type="circle">
+        <li>Pão</li>
+        <li>Tomate</li>
+        <li>Leite</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+    </ul>
+
+    <ul type="square">
+        <li>Pão</li>
+        <li>Tomate</li>
+        <li>Leite</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+    </ul>
+
+    <h2>Juntando listas versão 1.0</h2>
+    <h3>Minhas linguagens favoritas</h3>
+
+    <ol>
+        <li>Antigas</li>
+            <ol type="a">
+                <li>Clipper</li>
+                <li>Fortran</li>
+                <li>Delphi</li>
+            </ol>
+        <li>Novas</li>
+            <ol type="a">
+                <li>PHP</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Kotlin</li>
+            </ol>
+    </ol>
+
+    <ol>
+        <li>Antigas</li>
+            <ol type="a">
+                <li>Clipper</li>
+                <li>Fortran</li>
+                <li>Delphi</li>
+            </ol>
+        <li>Novas</li>
+            <ol type="a" start="5">
+                <li>PHP</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Kotlin</li>
+            </ol>
+    </ol>
+
+    <h2>Juntando listas versão 2.0</h2>
+    <h3>Meus jogos favoritos</h3>
+    <ol>
+        <li>Nes</li>
+            <ul type="square">
+                <li>Mario Bros</li>
+                <li>Ninja Gaiden</li>
+            </ul>
+        <li>SNES</li>
+            <ul type="square">
+                <li>Mario</li>
+                <li>Donkey kong</li>
+            </ul>
+        <li>PlayStation</li>
+            <ul type="square">
+                <li>Final Fantasy</li>
+                <li>Castlevania</li>
+            </ul>
+    </ol>
+
+    <h2>Lista de Definição</h2>
+    <dl> <!--É como se fosse um dicionario-->
+        <dt>HTML</dt><!--Termo-->
+        <dd>Linguagem de marcaçao para a criação de conteúdo de um site.</dd><!--Descrição-->
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para criação de design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site</dd>
+    </dl>
+    
 </body>
 </html>
